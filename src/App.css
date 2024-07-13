@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  margin: 60px 20px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1024px;
+    margin: 60px auto;
+  }
+}
+
+.search-bar {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+}
+
+.pokemon-container {
+  display: grid;
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}

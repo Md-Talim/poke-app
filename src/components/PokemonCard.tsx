@@ -1,4 +1,5 @@
 import { Pokemon } from "../types/Pokemon";
+import "./PokemonCard.css";
 
 interface Props {
   pokemon: Pokemon;
