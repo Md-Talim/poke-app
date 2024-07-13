@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# Pokémon React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application that fetches and displays data from the [PokeAPI](https://pokeapi.co/). The app shows a list of Pokémon in cards with images and includes a search functionality to filter Pokémon by name. I built this project while applying for an internship position.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches Pokémon data from PokeAPI.
+- Displays Pokémon in cards with images.
+- Includes a search bar to filter Pokémon by name.
+- Responsive design.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Vite.js
+- Axios for API requests
+- CSS for styling
+- Bun as package manager
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Prerequisites
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Make sure you have the following installed on your local machine:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Bun](https://bun.sh/)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/md-talim/poke-app.git
+   cd pokemon-react-app
+   ```
+2. Install the dependencies using Bun:
+   ```bash
+   bun install
+   ```
+3. Start the development server:
+   ```bash
+   bun run dev
+   ```
+4. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+- Use the search bar at the top to filter Pokémon by name.
+- Scroll through the list to see all available Pokémon.
+
+## Contributing
+
+If you want to contribute to this project, feel free to open a pull request or submit an issue.
